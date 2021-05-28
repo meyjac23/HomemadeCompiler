@@ -1,0 +1,77 @@
+int i;
+bool b;
+int f(){return i;}
+struct S{
+    int x;
+    int y;
+};
+
+struct S s;
+
+void arithmetic(){
+    i = i + i;
+    i = i * i;
+    i = i / i;
+    i = i - i;
+}
+
+void write(){
+    cout << i;
+    cout << b;
+    cout << s.x;
+}
+
+void read(){
+    cin >> i;
+    cin >> b;
+    cin >> s.x;
+}
+
+void call(){
+    f();
+}
+
+void logical(){
+    b = !b;
+    b = b && b;
+    b = b || b;
+}
+
+void ifstmt(){
+    if(i == 9){
+        i = i;
+    }
+}
+
+void ifelsestmt(){
+    if(i == 9){
+        i = i;
+    } else {
+        i = i;
+    }
+}
+
+void whilestmt(){
+    while(i > 9){
+        i = i;
+    }
+}
+
+void repeatstmt(){
+    repeat(i){
+        i = i;
+    }
+}
+void relational(){
+    b = i < i;
+    b = i > i;
+    b = i <= i;
+    b = i >= i;
+}
+
+void equality(){
+    b = i == i;
+    b = i != i;
+}
+
+

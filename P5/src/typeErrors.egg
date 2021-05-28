@@ -1,0 +1,117 @@
+int i;
+bool b;
+struct S{
+    int x;
+    int y;
+};
+struct S s;
+
+void relational(){
+    b = i < b;
+    b = i > b;
+    b = i <= b;
+    b = i >= b;
+}
+void arithmetic(){
+    i = i+b;
+    i = i * b;
+    i = i / b;
+    i = i - b;
+    b = i - b;
+    b++;
+    b--;
+}
+
+void logical(){
+    b = i || b;
+    b = i && b;
+    b = !i;
+    i = b;
+    i = b == i;
+}
+
+void fvoid(int i){}
+
+void gvoid(int i, bool b){}
+
+int intfunc(){}
+
+
+void nullfunc(int i){return;}
+
+void write(){
+    cout << intfunc;
+    cout << s;
+    cout << S;
+    cout << nullfunc(i);
+}
+
+void read(){
+    cin >> logical;
+    cin >> S;
+    cin >> s;
+}
+
+void functionCalls(){
+    f();
+    fvoid();
+    fvoid(i, b);
+    gvoid(b, i);
+}
+
+int badReturn(){
+    return b;
+}
+
+void voidReturn(){
+    return i;
+}
+
+void ifStmt(){
+    if(i){
+        i = i;
+    }
+}
+
+void ifelsestmt(){
+    if(i){
+        i = i;
+    } else {
+        i = i;
+    }
+}
+void whileStmt(){
+    while(i){
+        i = i;
+    }
+}
+
+void repeatStmt(){
+    repeat(b){
+        i = i;
+    }
+}
+
+int missingReturn(){
+    return;
+}
+
+void equality(){
+    b = ifStmt == missingReturn;
+    b = S == S;
+    b = s == s;
+}
+
+void assignment(){
+    repeatStmt = whileStmt;
+    S = S;
+    s = s;
+}
+
+void cascade(){
+    b = (i + true) && (b < true);
+}
+
+int main(){
+    cout << nullfunc(i);
+}

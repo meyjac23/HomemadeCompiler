@@ -1,0 +1,11 @@
+int x;
+int y;
+int func(int z, int a) {
+    int c;
+}
+
+struct foo {
+    int b;
+};
+
+struct foo l;
